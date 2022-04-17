@@ -2,6 +2,8 @@ from re import I
 import cv2
 import numpy as np
 
+#Ficou borrado e a imagem cortada
+
 img = cv2.imread('ifma-caxias.jpg')
 
 rows,cols = img.shape[:2]
