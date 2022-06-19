@@ -15,6 +15,9 @@ else:
             break
 capture.release()
 cv2.destroyAllWindows()
+
+
+
 #Detectar moedas
 import cv2
 import numpy as np
