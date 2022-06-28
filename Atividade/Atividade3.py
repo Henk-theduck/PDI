@@ -1,7 +1,10 @@
 import cv2
 import numpy as np
 
-img = cv2.imread("logo-if.jpg")
+resize = cv2.imread("cars.png")
+
+img2 = cv2.resize(resize,[461,191])
+img = cv2.cvtColor(img2,cv2.COLOR_BGR2GRAY)
 
 def func_brilho(img, br):
     brilho=[br,br,br]
@@ -43,7 +46,7 @@ while(True):
         cv2.imshow('Atividade-3', result)
         print('+brilho', brilho)
     elif key == ord('z'):
-        brilho=max(brilho-50,-255)
+        brilho=max(brilho-25,-255)
         result = func_brilho(img, brilho)
         cv2.imshow('Atividade-3', result)
         print('-brilho', brilho)

@@ -28,6 +28,9 @@ cv2.imshow('Mask Inv',logo_tr)
 cv2.imshow('NULL',img_null)
 cv2.imshow('Com logo',img)
 
+cv2.imwrite('ifmalogo.png', img)
+cv2.imwrite('masklogo.png', mask_inv)
+
 
 
 
